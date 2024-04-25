@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #8e0101;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -105,4 +105,8 @@ header nav #direita.active {
 }
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+main {
+    margin-top: 15vh;
 }

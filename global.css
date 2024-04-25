@@ -9,7 +9,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    padding: 5% 0 0;
+    margin: 5% 0 0;
 }
 footer a {
     font-family: "Source Serif Pro";
@@ -17,4 +17,9 @@ footer a {
     text-decoration: none;
     cursor: pointer;
     color: #8e0101;
+}
+
+header nav #esquerda  h1 a {
+    text-decoration: none;
+    color: white;
 }

@@ -1,7 +1,8 @@
 header {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: #8e0101;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     z-index: 100;
@@ -9,7 +10,6 @@ header {
 
 
 header nav {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 2%;
@@ -20,6 +20,7 @@ header nav #esquerda h1 {
     margin: 0;
     padding: 0;
 }
+
 
 header nav #direita {
     width: 50%;
@@ -119,6 +120,7 @@ header nav #direita.active {
 main {
     width: 90%;
     margin: auto;
+    margin-top: 15vh;
 }
 
 main h1 {
