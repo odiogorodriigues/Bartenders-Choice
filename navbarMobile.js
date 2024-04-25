@@ -1,10 +1,3 @@
-window.addEventListener('scroll', function() {
-    let header = document.querySelector('header');
-    let h1 = document.querySelector('#esquerda');
-    header.classList.toggle('rolagem', window.scrollY > 200);
-    h1.classList.toggle('visibily', window.scrollY > 200);
-})
-
 class MobileNavbar {
     constructor(mobileMenu, navList , navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
@@ -27,7 +20,6 @@ class MobileNavbar {
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
-        this.rolagem();
     }
 
     addClickEvent() {

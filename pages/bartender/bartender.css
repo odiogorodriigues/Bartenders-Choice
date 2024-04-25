@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #8e0101;
+}
+
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+header nav #esquerda h1 {
+    font-family: Ewert;
+    margin: 0;
+    padding: 0;
+}
+
+header nav #direita {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+}
+header nav #direita button {
+    background-color: transparent;
+    border: 0;
+}
+header nav #direita button a {
+    font-family: "Source Serif Pro";
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    cursor: pointer;
+}
+header nav #direita button a:hover {
+    color: #2B2525;
+    transition: 0.5s;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+    header nav #direita {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        top: 5vh;
+        right: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: #8e0101;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    #direita button {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+header nav #direita.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
