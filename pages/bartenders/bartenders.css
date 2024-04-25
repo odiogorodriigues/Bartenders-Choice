@@ -3,6 +3,8 @@ header {
     position: sticky;
     top: 0;
     background-color: #8e0101;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
 }
 
 
@@ -55,6 +57,14 @@ header nav #direita button a:hover {
 
 
 @media (max-width: 700px) {
+    .bartenders {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100% !important;
+    }
     body {
         overflow-x: hidden;
     }
@@ -104,4 +114,59 @@ header nav #direita.active {
 }
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main h1 {
+    font-family: "Ewert";
+    font-size: 200%;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+}
+
+.container {
+    background-color: transparent;
+    border: 2px solid #8e0101;
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    align-items: center;
+    padding: 1%;
+    gap: 5%;
+    flex: 1 1 45%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.container:hover {
+    transform: translateY(-10px);
+    translate: 2s;
+}
+.container h2 {
+    font-family: 'Ewert';
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 2%;
+    margin: 0;
+}
+.container p {
+    font-family: 'Source Serif Pro';
+    font-family: 100%;
+    text-align: left;
+}
+
+.bartenders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+    filter: drop-shadow(10px 5px 10px black);
 }

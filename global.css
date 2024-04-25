@@ -11,8 +11,10 @@ footer {
     justify-content: center;
     padding: 5% 0 0;
 }
-footer p {
+footer a {
     font-family: "Source Serif Pro";
     font-size: 150%;
+    text-decoration: none;
+    cursor: pointer;
     color: #8e0101;
 }

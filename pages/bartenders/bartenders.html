@@ -1,45 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bartender’s Choice</title>
-    <link rel="shortcut icon" href="../../img/icon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../../global.css" />
-    <link rel="stylesheet" href="bartenders.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ewert&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        href="https://fonts.googleapis.com/css?family=Source Serif Pro"
-        rel="stylesheet"
-    />
-</head>
-<body>
-    <header>
-        <nav>
-            <div id="esquerda">
-                <h1>BARTENDER’S CHOICE</h1>
-            </div>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <div id="direita">
-                <button><a href="../../index.html">Home</a></button>
-                <button><a href="../about/about.html">Quem Somos</a></button>
-                <button><a href="../bartenders/bartenders.html">Bartenders</a></button>
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bartender’s Choice</title>
+        <link
+            rel="shortcut icon"
+            href="../../img/icon.svg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../../global.css" />
+        <link rel="stylesheet" href="bartenders.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ewert&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Source Serif Pro"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="esquerda">
+                    <h1>BARTENDER’S CHOICE</h1>
+                </div>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div id="direita">
+                    <button><a href="../../index.html">Home</a></button>
+                    <button>
+                        <a href="../about/about.html">Quem Somos</a>
+                    </button>
+                    <button>
+                        <a href="../bartenders/bartenders.html">Bartenders</a>
+                    </button>
+                </div>
+            </nav>
+        </header>
 
-    <footer>
-        <p>Diogo Rodrigues © 2024</p>
-    </footer>
-    <script src="../../navbarMobile.js"></script>
-</body>
+        <main>
+            <h1>BARTENDERS</h1>
+            <div class="bartenders">
+                <div class="container" data-value="0" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/manuel.svg" alt="Manuel Ramos" />
+                    </div>
+                    <div>
+                        <h2>Manuel Ramos</h2>
+                        <p>
+                            Manuel Ramos é mais do que um bartender - ele é um
+                            mestre na arte da mixologia, trazendo consigo uma
+                            mistura única de talento, paixão e história que
+                            torna cada visita ao seu bar uma experiência
+                            inesquecível.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Caribbean Breeze e
+                            Passionflower Martini
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container" data-value="1" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/ana.svg" alt="Ana Carolina" />
+                    </div>
+                    <div>
+                        <h2>Ana Carolina</h2>
+                        <p>
+                            Ana Carolina é uma bartender criativa, apaixonada
+                            por criar cocktails únicos que refletem a cultura e
+                            os sabores autênticos da cidade, enquanto encanta
+                            seus clientes com sua energia contagiante e
+                            histórias envolventes.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Sampa Sour e Tropical
+                            Twist
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container" data-value="2" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/maria.svg" alt="Maria Victória" />
+                    </div>
+                    <div>
+                        <h2>Maria Victória</h2>
+                        <p>
+                            Maria Victoria é uma bartender experiente, conhecida
+                            por sua elegância e habilidade excepcionais na
+                            criação de coquetéis sofisticados que elevam a
+                            experiência dos clientes a um novo nível de requinte
+                            e prazer.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Victoria's Elixir e São
+                            Paulo Sunset
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container" data-value="3" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/mateus.svg" alt="Mateus Oliveira" />
+                    </div>
+                    <div>
+                        <h2>Mateus Oliveira</h2>
+                        <p>
+                            Mateus Oliveira é um bartender enigmático e
+                            talentoso, cujas criações de coquetéis transportam
+                            os clientes para uma viagem de sabores e histórias
+                            únicas.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Caminho das Estrelas e
+                            Noites de Belo Horizonte
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container" data-value="4" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/ludmila.svg" alt="Ludmila Silva" />
+                    </div>
+                    <div>
+                        <h2>Ludmila Silva</h2>
+                        <p>
+                            Ludmila Silva é uma bartender vibrante e criativa,
+                            cujos coquetéis são uma celebração da cultura e da
+                            energia do Rio de Janeiro.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Samba Sunset e Carnaval
+                            Carioca
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container" data-value="5" onclick="showValue(this)">
+                    <div>
+                        <img src="../../img/felipe.svg" alt="Felipe Perreira" />
+                    </div>
+                    <div>
+                        <h2>Felipe Perreira</h2>
+                        <p>
+                            Felipe Pereira é um bartender autêntico e
+                            apaixonado, cujos coquetéis são uma celebração da
+                            rica cultura e dos sabores vibrantes da Bahia.
+                        </p>
+                        <p>
+                            <b>Principais Drinks:</b> Axé Tropical e Bahia Sunrise 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://github.com/odiogorodriigues">Diogo Rodrigues © 2024</p>
+        </footer>
+        <script src="../../navbarMobile.js"></script>
+        <script src="showBartender.js"></script>
+    </body>
 </html>

@@ -4,6 +4,7 @@ header {
     top: 0;
     left: 0;
     transition: 1s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 header.rolagem {
     background-color: #8e0101;
