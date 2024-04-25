@@ -1,0 +1,216 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+header.rolagem {
+    background-color: #8e0101;
+    transition: 1s;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+header nav #esquerda {
+    visibility: hidden;
+}
+header nav #esquerda.visibily {
+    visibility: visible;
+}
+header nav #esquerda h1 {
+    font-family: Ewert;
+    margin: 0;
+    padding: 0;
+}
+
+header nav #direita {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+}
+header nav #direita button {
+    background-color: transparent;
+    border: 0;
+}
+header nav #direita button a {
+    font-family: "Source Serif Pro";
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    cursor: pointer;
+}
+header nav #direita button a:hover {
+    color: #2B2525;
+    transition: 0.5s;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+section {
+    background-image: url(img/carrosel-img1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+    transition: background-image 1s ease-in-out;
+}
+section h1 {
+    font-family: "Ewert";
+    padding: 20% 10% 0 10%;
+    font-size: 250%;
+    margin: 0;
+}
+section p {
+    font-family: "Source Serif Pro";
+    padding: 0 10% 8%;
+    font-size: 150%;
+}
+
+#information {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 0 5% 0 5%;
+}
+#information img {
+    width: 50%;
+}
+#information p {
+    font-family: "Source Serif Pro";
+    font-size: 150%;
+}
+
+#functions {
+    padding: 0 5% 0 5%;
+}
+#functions h2 {
+    font-family: "Source Serif Pro";
+    font-size: 250%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#functions hr {
+    width: 15%;
+    margin-left: 0;
+    justify-content: flex-start;
+    margin-bottom: 3%;
+}
+#functions ul {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Serif Pro";
+    font-size: 150%;
+}
+#functions ul li {
+    padding: 2% 0 2% 0;
+}
+
+#button-bartenders {
+    display: flex;
+    justify-content: center;
+}
+#button-bartenders button {
+    font-family: "Source Serif Pro";    
+    font-size: 125%;
+    background-color: #8e0101; 
+    border: 0;
+    border-radius: 50px;
+    padding: 1% 3% 1% 3%;
+    cursor: pointer;
+}
+#button-bartenders button a {
+    text-decoration: none;
+    color: white;
+}
+#button-bartenders button:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+#button-bartenders button:hover a {
+    color: #8e0101;
+    transition: 0.5s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0;
+}
+footer p {
+    font-family: "Source Serif Pro";
+    font-size: 150%;
+    color: #8e0101;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+    #information {
+        flex-direction: column;
+    }
+    #information img {
+        width: 100%;
+    }
+    header nav #direita {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        top: 5vh;
+        right: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: #8e0101;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    #direita button {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+header nav #direita.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
