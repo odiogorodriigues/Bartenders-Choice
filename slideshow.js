@@ -1,8 +1,7 @@
 var imageUrls = [
-    'img/carrosel-img1.svg',
-    'img/carrosel-img2.svg',
-    'img/carrosel-img3.svg',    
-    'img/carrosel-img4.svg'
+    'carrosel-img1.svg',
+    'carrosel-img2.svg',  
+    'carrosel-img4.svg', 
 ]
 
 var currentIndex = 0;
