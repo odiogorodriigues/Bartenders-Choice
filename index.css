@@ -64,7 +64,6 @@ header nav #direita button a:hover {
 }
 
 section {
-    background-image: url(img/carrosel-img1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 90%;
